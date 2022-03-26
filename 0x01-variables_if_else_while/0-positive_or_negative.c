@@ -1,50 +1,35 @@
 #include <stdlib.h>
 #include <time.h>
-<<<<<<< HEAD
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-=======
 #include <stdio.h>
 
 /**
- * main - assigns a random number to init n everytime
+ * main - Entry point
  *
- * it executes and prints it
- *
- * Return:Always 0(Success)
+ * Return: Always 0 (Successs/correct)
  */
->>>>>>> 463f79100780f77a332cd0062afab1b324c3e3ba
+
 int main(void)
 {
-	int n;
+int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-<<<<<<< HEAD
-	scanf("%d", n)
-	if(n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if(n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else
-	{
-		printf("%d is zero\n", n);
-	}
-=======
-	scanf("%d", &n);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
+if (n == 0)
+{
+printf("%i is zero\n", n);
+}
 
->>>>>>> 463f79100780f77a332cd0062afab1b324c3e3ba
-	return (0);
+else if (n < 0)
+{
+printf("%i is negative\n", n);
+}
+
+else
+{
+printf("%i is positive\n", n);
+}
+
+return (0);
+
 }
